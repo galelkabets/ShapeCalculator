@@ -101,7 +101,7 @@ function makeRectangle() {
       alert("please select 1 / 2 or 3/4");
       break;
   }
-  rectangleCalcilate(heightUserInput, widthUserInput);
+  rectangleCalculate(heightUserInput, widthUserInput);
 }
 function makeFullRectangle(height, width) {
   for (let i = 0; i < height; i++) {
@@ -171,7 +171,7 @@ function makeTriangle() {
       alert("please select 1 / 2 or 3/4");
       break;
   }
-  triangleCalcilate(length);
+  triangleCalculate(length);
 }
 function makeFullTriangle(length) {
   for (let i = 0; i <= length; i++) {
@@ -229,7 +229,7 @@ function calcPerimeterTriangle(length) {
   document.writeln(`Perimeter: ${perimeter}`);
 }
 
-function rectangleCalcilate(height, width) {
+function rectangleCalculate(height, width) {
   let perimeter = (height + width) * 2;
   let area = height * width;
   document.write(
@@ -237,7 +237,7 @@ function rectangleCalcilate(height, width) {
   );
 }
 
-function triangleCalcilate(length) {
+function triangleCalculate(length) {
   let hypotenuse = Math.sqrt(Math.pow(length, 2) * 2);
   let perimeter = le * 2 + hypotenuse;
   let area = (le * le) / 2;
